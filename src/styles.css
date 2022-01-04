@@ -1,4 +1,157 @@
-h1 {
-  color: hotpink;
-  font-family: cursive;
+body{
+  margin:0;
 }
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right bottom,#3278B7,#8846AC);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.post{
+  height:fit-content;
+  width:700px;
+  background-color: white;
+  border-radius:5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+/* HEADER */
+.post-header{
+  width: 100%;
+  padding:5px 20px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+ 
+}
+.post-sender{
+  display:flex;
+  align-items: center;
+}
+.post-sender-info-container{
+  display:flex;
+  flex-direction: column;
+  margin:0;
+  color:gray;
+}
+#sender-title{
+  color:black;
+  font-size:20px;
+}
+#timeInfo{
+  display: flex;
+  align-items: center;
+}
+.menu-elipsis{
+  font-weight: bold;
+  font-size: 30px;
+  color:gray
+}
+
+/* BODY */
+.summary{
+  box-sizing: border-box;
+  padding:0 5px;
+  width: 100%;
+  height:fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.link-tag{
+  color:#3A70C1;
+  font-weight: bold;
+}
+.post-preview{
+  width:100%;
+  margin-top:5px;
+  flex:1;
+  display: flex;
+  flex-direction: column;
+}
+.post-preview img{
+  width:inherit;
+}
+.post-preview-info{
+  padding:0px 10px;
+  background-color:#EFF3F7;
+}
+#post-preview-info-title{
+  font-weight: bold;
+  font-size: 1.05em;
+}
+#post-preview-info-summary{
+  color:gray;
+}
+
+
+.post-footer{
+  color:gray;
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  padding:0 20px;
+  box-sizing: border-box;
+  border-bottom:1px solid gray;
+}
+.reaction-comment-count-container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+.reaction-count {
+  height:fit-content;
+  width: 100%;
+  display: flex;
+  padding:10px 0px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom:0.5px solid lightgray;
+}
+.reaction-icons-count-container{
+  margin-top:5px;
+  display: flex;
+  align-items: center;
+}
+.icon-container{
+  height:30px;
+  width:30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.icon{
+  height:20px;
+
+}
+#like{
+  background-color:#D5E7FD;
+  
+}
+#support{
+  background-color:#CCC4D6;
+}
+#celebrate{
+  background-color:#E1F5D4;
+}
+.action-container{
+  display: flex;
+  justify-content: space-around;
+}
+.action{
+  display: flex;
+  
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
